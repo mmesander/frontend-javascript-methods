@@ -13,8 +13,13 @@ console.log(currentDay);
 // Uren: 16 (als er een vier in de klok zit op het moment van aanroepen)
 // Minuten: 36 (als het 16:36 is op het moment van aanroepen)
 
-
+const presentDay = new Date();
+console.log(presentDay)
+console.log(presentDay.getHours() + ":" + presentDay.getMinutes())
 
 /* Opdracht 2 */
 // Format het date-object dat je bij de vorige vraag hebt gemaakt naar een leesbare datum
 // ---- Verwachte uitkomst: Tue Apr 06 2021 (afhankelijk van het moment)
+
+const date = presentDay.toDateString()
+console.log(date)
